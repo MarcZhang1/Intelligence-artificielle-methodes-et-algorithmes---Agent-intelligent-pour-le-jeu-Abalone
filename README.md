@@ -1,11 +1,16 @@
-# Projet : Agent Intelligent pour le Jeu Abalone
 
-Ce dépôt contient un agent intelligent pour jouer au jeu **Abalone**. Ce projet a été réalisé dans le cadre du cours Intelligence artificielle : méthodes et algorithmes, dont le but est de concevoir un agent capable de participer à un tournoi d'Abalone.
+# Agent Intelligent pour le Jeu Abalone
 
-## Description
+Ce projet vise à implémenter un agent intelligent capable de jouer au jeu de stratégie **Abalone** dans le cadre du cours Intelligence artificielle : méthodes et algorithmes.
 
-**Abalone** est un jeu de stratégie en un contre un, où chaque joueur doit expulser les billes de son adversaire hors du plateau pour gagner. Le projet consiste à développer un agent automatique en Python qui utilise des techniques d'intelligence artificielle pour maximiser ses chances de victoire.
+## Description du Projet
+
+Le jeu Abalone est un jeu de stratégie en un contre un, où chaque joueur doit expulser un maximum de billes adverses hors du plateau pour remporter la partie. Le projet consiste à concevoir un agent automatique qui participe à un tournoi en utilisant une stratégie de jeu optimisée, basée sur les algorithmes d'intelligence artificielle.
 
 ## Structure du Code
 
-- **my_player.py** : Fichier contenant l'implémentation de notre agent intelligent.
+- **my_player.py** : Fichier contenant l'implémentation de notre agent.
+
+## Méthode Utilisée
+
+L'agent utilise l'algorithme **Minimax** avec élagage **alpha-bêta**, qui évalue les actions possibles en minimisant les coups adverses et en maximisant les siens pour trouver la meilleure décision. Une **heuristique personnalisée** basée sur le nombre de pièces et la distance au centre du plateau guide les choix de l'agent.
